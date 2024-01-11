@@ -1,0 +1,20 @@
+<!-- INTERPOLATION -->
+<p>{{title}}</p>
+
+<!-- DATA BINDING -->
+<input type="text" [value]="clientName" />
+
+<!-- STYLE BINDING -->
+<p [style.color]="myColor"> Text color was styled using style bindig!</p>
+
+<!-- CLASS BINDING -->
+<p [class]="appliedCSS">Thgis line applied the *myClass* property.</p>
+<p [class.blue]="notAppliedCSS">while this does not.</p>
+
+<!-- EVENT BINDING -->
+<button (click)="showData($event)">Click Here</button>
+<button on-click="showData($event)">Click Here</button>
+
+<h2>Example 1</h2>
+<button (click)="clickMe()">Click Me</button>
+<p>You have clicked {{clickCount}}</p>
