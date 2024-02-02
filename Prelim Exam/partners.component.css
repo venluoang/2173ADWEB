@@ -1,0 +1,84 @@
+/* partners.component.css (or partners.component.scss) */
+
+/* Header Styling */
+.header {
+    position: relative;
+    text-align: center;
+  }
+  
+  .header img {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed to match the Home Page */
+    object-fit: cover; /* Preserve aspect ratio and cover the entire container */
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .header-content h1 {
+    font-size: 3em; /* Increased font size */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black; /* Added text shadow */
+  }
+  
+  .header-content p {
+    font-size: 1.5em; /* Increased font size */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px black; /* Added text shadow */
+  }
+  
+  .header-content button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Partners Heading Styling */
+  .partners-heading {
+    font-size: 2em; /* Increased font size */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black; /* Added text shadow */
+  }
+  
+  /* Partners Table Styling */
+  .partners-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .partners-table th, .partners-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .partners-table th {
+    background-color: #000;
+    color: white;
+  }
+  
+  .partners-table img {
+    width: 50px; /* Set the desired width for logos */
+    height: auto;
+  }
+  
+  .partners-table a {
+    color: #0568aa; /* Link color */
+    text-decoration: none;
+  }
+  
+  .partners-table a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,20 @@
+<!-- home.component.html -->
+
+<div class="header">
+    <img src="assets/home.jpg" alt="Header Image">
+    <div class="header-content">
+    <!-- One-way Data Binding Integration-->
+      <h1>{{ pageTitle }}</h1>
+      <p>{{ conferenceDescription }}</p>
+      <button>{{ earlyBirdButtonText }}</button>
+    </div>
+  </div>
+  
+  <div class="places-container">
+    <div *ngFor="let place of places" class="place-card">
+      <img [src]="place.image" alt="{{ place.name }} Image">
+      <h3>{{ place.name }}</h3>
+      <p>{{ place.description }}</p>
+    </div>
+  </div>
+  

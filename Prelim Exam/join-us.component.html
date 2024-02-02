@@ -1,0 +1,35 @@
+<!-- join-us.component.html -->
+
+<div class="header">
+    <img src="assets/join-us.jpg" alt="Join Us Page Header Image">
+    <div class="header-content">
+      <h1>{{ pageTitle }}</h1>
+      <p>{{ pageDescription }}</p>
+      <button (click)="onJoinClick()">{{ joinButtonText }}</button>
+    </div>
+  </div>
+  
+  <h2 class="join-heading">Fill the form below:</h2>
+  
+ <!-- Two-way data binding using ngModel and ngModelChange -->
+<div class="form-container">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" [(ngModel)]="firstName" (ngModelChange)="onJoinClick()" placeholder="Enter your first name">
+  
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" [(ngModel)]="lastName" (ngModelChange)="onJoinClick()" placeholder="Enter your last name">
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="email" placeholder="Enter your email">
+  
+    <label for="institution">Institution/Affiliation:</label>
+    <input type="text" id="institution" [(ngModel)]="institution" placeholder="Enter your institution/affiliation">
+  </div>
+  
+  <!-- Display concatenated details automatically -->
+  <div class="output-container">
+    <p *ngIf="fullName">Full Name: {{ fullName }}</p>
+    <p *ngIf="email">Email: {{ email }}</p>
+    <p *ngIf="institution">Institution/Affiliation: {{ institution }}</p>
+  </div>
+  

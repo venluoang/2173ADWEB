@@ -1,0 +1,68 @@
+/* about.component.css (or about.component.scss) */
+
+.header {
+    position: relative;
+    text-align: center;
+    height: 300px; /* Adjust the height to match the Home Page */
+    overflow: hidden; /* Ensure the content doesn't overflow */
+  }
+  
+  .header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .header-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Additional specific styles for the About component */
+  .about-heading {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* Body Content Styling */
+  body {
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8; 
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 18px; /* Adjust padding to make it smaller */
+    font-size: 1em; /* Adjust font-size to make it smaller */
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #000;
+  }
+  

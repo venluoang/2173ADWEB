@@ -1,0 +1,33 @@
+<!-- about.component.html -->
+
+<div class="header">
+    <img src="assets/about.jpg" alt="About Page Header Image">
+    <div class="header-content">
+      <!-- Data Binding for Page Title -->
+      <h1>{{ pageTitle }}</h1>
+      <!-- Data Binding for Page Description -->
+      <p>{{ pageDescription }}</p>
+      <!-- Data Binding for Button Text -->
+      <button (click)="onLearnMoreClick()">{{ learnMoreButtonText }}</button>
+    </div>
+  </div>
+  
+  <!-- 'About' Heading after the Header -->
+  <h2 class="about-heading">About</h2>
+  
+  <!-- Description with Event Binding Integration -->
+  <p>
+    Welcome to our organization's about page. We are passionate about creating memorable conference experiences that push boundaries and drive innovation.
+    Our dedicated team and committee leadership work tirelessly to ensure every event is a success.
+    Whether you are an attendee or a potential partner, we invite you to explore our world of conferences and discover the exciting opportunities that await you.
+  </p>
+
+  <button (click)="onClickGift()">{{ clickGiftButtonText }}</button>
+  
+  <p>
+    Our commitment to excellence extends beyond event organization. We believe in fostering a community that values collaboration, diversity, and knowledge-sharing.
+    Through our conferences, we aim to connect professionals, thought leaders, and enthusiasts from various industries to facilitate meaningful discussions and networking.
+  </p>
+  <p>
+    As we continue to evolve in the ever-changing landscape of conferences, we invite you to join us on this journey. Explore our website, engage with our community, and stay tuned for upcoming events and exciting announcements.
+  </p>

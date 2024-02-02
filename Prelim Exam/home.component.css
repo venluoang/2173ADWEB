@@ -1,0 +1,69 @@
+/* home.component.css (or home.component.scss) */
+
+.header {
+    position: relative;
+    text-align: center;
+  }
+  
+  .header img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .header-content h1 {
+    font-size: 3em; /* Increased font size */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black; /* Added text shadow */
+  }
+  
+  .header-content p {
+    font-size: 1.5em; /* Increased font size */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px black; /* Added text shadow */
+  }
+  
+  .header-content button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .places-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .place-card {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .place-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .place-card h3 {
+    margin-top: 10px;
+    font-size: 1.5em; /* Increased font size */
+    text-shadow: 1px 1px 2px black; /* Added text shadow */
+  }
+  
+  .place-card p {
+    font-size: 1.2em; /* Increased font size */
+    margin-bottom: 10px;
+  }
+  

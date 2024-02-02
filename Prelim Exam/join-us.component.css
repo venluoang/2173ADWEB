@@ -1,0 +1,74 @@
+/* join-us.component.css */
+
+.header {
+    position: relative;
+    text-align: center;
+  }
+  
+  .header img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .header-content h1 {
+    font-size: 3em; /* Increased font size */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black; /* Added text shadow */
+  }
+  
+  .header-content p {
+    font-size: 1.5em; /* Increased font size */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px black; /* Added text shadow */
+  }
+  
+  .header-content button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .join-heading {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+  }
+  
+  .output-container {
+    margin-top: 20px;
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+  
+  .output-container p {
+    font-size: 1.2em;
+    margin-right: 20px;
+  }
