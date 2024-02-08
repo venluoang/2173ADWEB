@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Card</title>
+  <style>
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    .card h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: rgb(213, 126, 140);
+      text-align: center;
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #5faac7;
+    }
+
+    .card h4 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: rgb(108, 106, 106);
+      text-align: center;
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: #666;
+    }
+
+    .card hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>Venice L Luoang</h1>
+  <h4> Midterm Lab Act 1</h4>
+  <hr/>
+
+  <h2>Formatting Date</h2>
+  <p>Unformatted: {{ presentDate }}</p>
+  <p>Default Format: {{ presentDate | date | uppercase}}</p>
+  <p>Short Date: {{ presentDate | date:'shortDate'}}</p>
+  <p>Medium Date: {{ presentDate |date:'mediumDate'}}</p>
+  <p>Long Date: {{ presentDate | date:'longDate'}}</p>
+
+  <hr/>
+
+  <h2>Dates with parameters</h2>
+  <p>dd/mm/yyyy: {{ presentDate | date:'d MM y' }}</p>
+
+  <hr/>
+
+  <h2>Formatting Time</h2>
+  <p>Standard Time: {{ presentDate | date:'shortTime' }}</p>
+  <p>Medium Time: {{ presentDate | date:'mediumTime' }}</p>
+  <p>Long Time: {{ presentDate | date:'longTime' }}</p>
+
+  <hr/>
+
+  <div> 
+    <h2>Async Pipe</h2>
+    <p>Seconds changing in Time: {{ time$ | async | date:'mediumTime' }}</p>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2>Slice Pipe</h2>
+    <p>Start index:- {{Fruits | slice:2}}</p>
+    <p>Start and end index:- {{Fruits | slice:1:4}}</p>
+    <p>Negative index:- {{Fruits | slice:-2}}</p>
+    <p>Negative start and end index:- {{Fruits | slice:-4:-2}}</p>
+  </div>
+
+  <hr/>
+
+  <h2> Currency Pipe </h2>
+  <p>{{ price | currency: '':true }}</p>
+  <p>{{ price | currency: 'INR' }}</p>
+  <p>{{ price | currency: 'CLP' }}</p>
+
+  <hr/>
+
+  <h2>Decimal Pipe</h2>
+  <p>Apply formatting:- {{decimalNum1 | number:'3.1'}}</p>
+  <p>Apply formatting:- {{decimalNum2 | number:'2.1-4'}}</p>
+  <p>Apply formatting:- {{decimalNum3 | number:'2.2'}}</p>
+
+  <hr/>
+
+  <h2>JSON Pipe</h2>
+  <p>Student 1: {{data | json }}</p>
+  <p>Student 2: {{data2 | json }}</p>
+  <p>Student 3: {{data2 | json }}</p>
+  
+
+  <hr/>
+  <h2>Percent Pipe</h2>
+  <p>Percentage: {{ percentNum1 | percent:'.2-2' }}</p>
+  <p>Percentage: {{ percentNum2 | percent:'.2-2' }}</p>
+  <p>Percentage: {{ percentNum3 | percent:'.2-2' }}</p>
+</div>
+
+</body>
+</html>
